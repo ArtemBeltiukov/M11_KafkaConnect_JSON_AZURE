@@ -72,7 +72,15 @@ For running the azure connector, you can create your own docker image. Create yo
 ## Create a kafka topic
 
 - The topic should have at least 3 partitions because the azure blob storage has 3 partitions. Name the new topic: "expedia".
-
+- To create kafka topic go to localhost:9021, Topics -> Add a topic
+![img.png](img.png)
 ## Prepare the azure connector configuration
-
+- Go to /connectors folder
+- Modify azure-source-cc-expedia.json file
 ## Upload the connector file through the API
+- To upload file go to localhost:9021, Connect -> choose connect -> Add connector -> Upload connector config file(azure-source-cc-expedia.json)
+![img_2.png](img_2.png)
+![img_1.png](img_1.png)
+  
+- Check that everything is ok
+![img_3.png](img_3.png)

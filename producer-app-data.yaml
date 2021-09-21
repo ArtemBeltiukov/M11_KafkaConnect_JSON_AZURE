@@ -42,8 +42,8 @@ spec:
           readOnly: true
         resources:
           requests:
-            memory: 512Mi # 768Mi
-            cpu: 500m # 1000m
+            memory: 768Mi # 768Mi
+            cpu: 1000m # 1000m
       volumes:
         - name: kafka-properties # Create secret with name `kafka-client-config` with client configurations
           secret:
